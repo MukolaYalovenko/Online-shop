@@ -13,6 +13,22 @@
     <title>Online-shop</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+  <style>
+     input[type="checkbox"]{
+            display: none;
+        }
+        input[type="checkbox"]:checked + label::before{
+            background-color: white;
+        }
+        label::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+  </style>
   </head>
 
   <body>
@@ -68,7 +84,43 @@
     <main class="main">
       <div class="container">
         <div class="row">
-          <aside class="col-3">Filter</aside>
+          <aside class="col-3">
+            <div class="aside">
+              <h2 class="charac">DEVICE TYPE</h2>
+              <input type="checkbox" id="Laptop">
+              <label for="Laptop">Laptop</label>
+              <input type="checkbox" id="Tablet">
+              <label for="Tablet">Tablet</label>
+            </div>
+            <div class="aside">
+              <h2 class="charac">COLOR</h2>
+              <input type="checkbox" id="Black">
+              <label for="Black">Black</label>
+              <input type="checkbox" id="Red">
+              <label for="Red">Red</label>
+              <input type="checkbox" id="Green">
+              <label for="Green">Green</label>
+              <input type="checkbox" id="Blue">
+              <label for="Blue">Blue</label>
+              <input type="checkbox" id="Orange">
+              <label for="Orange">Orange</label>
+            </div>
+            <div class="aside">
+              <h2 class="charac">RAM</h2>
+              <input type="checkbox" id="1GB">
+              <label for="1GB">1GB</label>
+              <input type="checkbox" id="2GB">
+              <label for="2GB">2GB</label>
+              <input type="checkbox" id="4GB">
+              <label for="4GB">4GB</label>
+              <input type="checkbox" id="6GB">
+              <label for="6GB">6GB</label>
+              <input type="checkbox" id="8GB">
+              <label for="8GB">8GB</label>
+            </div>
+            <div class="show">Show more options ...</div> <br> <br>
+            <button class="btn btn-more-details">SUBMIT</button>
+          </aside>
           <section class="col-9">
             <div class="row">
               <div class="col-12">
@@ -411,6 +463,9 @@
       
     </div>
     </main>
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+      <div class="c">c</div>
+      <div class="txt">Copyright 2017</div>
+    </footer>
   </body>
 </html>
