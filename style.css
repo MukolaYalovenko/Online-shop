@@ -312,14 +312,25 @@ span {
 }
 
 .like {
+  width: 30px;
+  height: 30px;
   position: absolute;
-
+  cursor: pointer;
   top: 50px;
   right: 10px;
   border: 1px solid #2c71b8;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
+  background-image: url(img/blue-heart.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.like:hover,
+.liked {
+  background-image: url(img/white-heart.png);
+  background-color: #2c71b8;
 }
 
 .product-title {
